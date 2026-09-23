@@ -1,23 +1,26 @@
 import React, { useState } from "react";
 import { Image } from "@/components/ui/image";
 import { Play, Newspaper, Youtube, Camera } from "lucide-react";
+import hero1 from "@/images/hero-1.jpg";
+import hero2 from "@/images/hero-2.jpg";
+import hero3 from "@/images/hero-3.jpg";
+import aboutSnippet from "@/images/about-snippet.jpg";
 
 // Reuses the same locally-hosted images as Home.jsx (Base44 reused these
 // across pages too). Swap in dedicated gallery images whenever you have them.
 const albums = [
-  { name: "Annual Fest 2025", count: 42, image: "/images/hero-3.jpg" },
-  { name: "Workshops", count: 28, image: "/images/hero-2.jpg" },
-  { name: "Quiz Finals", count: 19, image: "/images/hero-1.jpg" },
-  { name: "Guest Lectures", count: 15, image: "/images/hero-3.jpg" },
+   { name: "Annual Fest 2025", count: 42, image: hero3 },
+  { name: "Workshops", count: 28, image: hero2 },
+  { name: "Quiz Finals", count: 19, image: hero1 },
+  { name: "Guest Lectures", count: 15, image: hero3 },
 ];
 
 const galleryImages = [
-  "/images/hero-3.jpg",
-  "/images/hero-2.jpg",
-  "/images/hero-1.jpg",
-  "/images/hero-3.jpg",
-  "/images/about-snippet.jpg",
-  "/images/hero-2.jpg",
+   hero3,
+  hero2,
+  hero1,
+  aboutSnippet,
+  hero2,
 ];
 
 const videos = [

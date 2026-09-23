@@ -2,6 +2,10 @@ import React, { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { Image } from "@/components/ui/image";
 import StatCounter from "@/components/StatCounter";
+import hero1 from "@/images/hero-1.jpg";
+import hero2 from "@/images/hero-2.jpg";
+import hero3 from "@/images/hero-3.jpg";
+import aboutSnippet from "@/images/about-snippet.jpg";
 import CountdownTimer from "@/components/CountdownTimer";
 import {
   ArrowRight, Calendar, Microscope, Award, Users, FlaskConical,
@@ -12,19 +16,19 @@ import {
 // public/images/, then adjust the filenames below if needed.
 const heroSlides = [
   {
-    image: "/images/hero-1.jpg",
+    image: hero1,
     eyebrow: "Welcome to the Society",
     title: "Where Curiosity Meets Clinical Excellence",
     subtitle: "The official student research society of AIIMS Kalyani — building the next generation of physician-scientists.",
   },
   {
-    image: "/images/hero-2.jpg",
+    image: hero2,
     eyebrow: "Research First",
     title: "From Bench to Bedside, Led by Students",
     subtitle: "Original research, systematic reviews, and case reports — published in indexed journals, mentored by faculty.",
   },
   {
-    image: "/images/hero-3.jpg",
+    image: hero3,
     eyebrow: "Annual Symposium",
     title: "Conferences, Workshops & National Meets",
     subtitle: "Flagship fests, hands-on workshops, and lectures by eminent clinicians from across the country.",
@@ -168,7 +172,7 @@ export default function Home() {
           </div>
           <div className="relative">
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
-              <Image src="/images/about-snippet.jpg" fittingType="fill" alt="Medical students" className="w-full h-full" />
+              <Image src={aboutSnippet} fittingType="fill" alt="Medical students" className="w-full h-full" />
             </div>
             <div className="absolute -bottom-5 -left-5 bg-primary text-primary-foreground rounded-2xl px-6 py-4 shadow-lg hidden sm:block">
               <div className="font-display text-2xl font-semibold">Est. 2019</div>
